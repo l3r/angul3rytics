@@ -23,12 +23,12 @@ module.exports = function(grunt) {
         banner: '<%= meta.banner %>'
       },
       dist: {
-        src: ['src/angularytics.js', 'src/consoleHandler.js', 'src/googleHandler.js', 'src/trackEventFilter.js'],
+        src: ['src/angul3rytics.js', 'src/consoleHandler.js', 'src/googleHandler.js', 'src/trackEventFilter.js'],
         dest: '<%= dirs.dest %>/<%= pkg.name %>.js'
       }
     },
     zip: {
-      '<%= dirs.dest %>/angularytics.zip': ['<%= dirs.dest %>/<%= pkg.name %>.js', '<%= dirs.dest %>/<%= pkg.name %>.min.js']
+      '<%= dirs.dest %>/angul3rytics.zip': ['<%= dirs.dest %>/<%= pkg.name %>.js', '<%= dirs.dest %>/<%= pkg.name %>.min.js']
     },
     bower: {
       dev: {

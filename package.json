@@ -1,14 +1,14 @@
 {
-  "name": "angularytics",
-  "description": "The solution to tracking page views and events in a SPA with AngularJS",
+  "name": "angul3rytics",
+  "description": "The solution to tracking page views and events in a SPA with AngularJS enhaced E-Comm3rce supported ",
   "version": "0.4.0",
-  "filename": "angularytics.min.js",
-  "main": "./dist/angularytics.min.js",
-  "homepage": "https://github.com/mgonto/angularytics",
-  "author": "Martin Gontovnikas <martin@gonto.com.ar>",
+  "filename": "angul3rytics.min.js",
+  "main": "./dist/angul3rytics.min.js",
+  "homepage": "https://github.com/l3r/angul3rytics",
+  "author": "L3R <mail@l3r.net>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mgonto/angularytics.git"
+    "url": "git://github.com/l3r/angul3rytics.git"
   },
   "engines": {
     "node": ">= 0.9"
@@ -24,8 +24,8 @@
   ],
   "maintainers": [
     {
-      "name": "Martin Gontovnikas",
-      "website": "http://gon.to/"
+      "name": "l3r",
+      "website": "http://l3r.net/"
     }
   ],
   "dependencies": {},

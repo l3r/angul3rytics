@@ -1,5 +1,5 @@
 (function(){
-    angular.module('angularytics', []).provider('Angularytics', function() {
+    angular.module('angul3rytics', []).provider('Angul3rytics', function() {
 
         var eventHandlersNames = ['Google'];
         this.setEventHandlers = function(handlers) {
@@ -32,7 +32,7 @@
             var eventHandlers = [];
 
             angular.forEach(eventHandlersNames, function(handler) {
-                eventHandlers.push($injector.get('Angularytics' + handler + 'Handler'));
+                eventHandlers.push($injector.get('Angul3rytics' + handler + 'Handler'));
             });
 
             var forEachHandlerDo = function(action) {

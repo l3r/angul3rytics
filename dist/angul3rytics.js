@@ -1,5 +1,5 @@
 (function () {
-  angular.module('angularytics', []).provider('Angularytics', function () {
+  angular.module('angul3rytics', []).provider('Angul3rytics', function () {
     var eventHandlersNames = ['Google'];
     this.setEventHandlers = function (handlers) {
       if (angular.isString(handlers)) {
@@ -24,7 +24,7 @@
       function ($injector, $rootScope, $location) {
         var eventHandlers = [];
         angular.forEach(eventHandlersNames, function (handler) {
-          eventHandlers.push($injector.get('Angularytics' + handler + 'Handler'));
+          eventHandlers.push($injector.get('Angul3rytics' + handler + 'Handler'));
         });
         var forEachHandlerDo = function (action) {
           angular.forEach(eventHandlers, function (handler) {
@@ -64,7 +64,7 @@
   });
 }());
 (function () {
-  angular.module('angularytics').factory('AngularyticsConsoleHandler', [
+  angular.module('angul3rytics').factory('Angul3ryticsConsoleHandler', [
     '$log',
     function ($log) {
       var service = {};
@@ -82,7 +82,7 @@
   ]);
 }());
 (function () {
-  angular.module('angularytics').factory('AngularyticsGoogleHandler', function () {
+  angular.module('angul3rytics').factory('Angul3ryticsGoogleHandler', function () {
     var service = {};
     service.trackPageView = function (url) {
       _gaq.push([
@@ -115,7 +115,7 @@
       ]);
     };
     return service;
-  }).factory('AngularyticsGoogleUniversalHandler', function () {
+  }).factory('Angul3ryticsGoogleUniversalHandler', function () {
     var service = {};
     service.trackPageView = function (url) {
       ga('set', 'page', url);
@@ -131,11 +131,11 @@
   });
 }());
 (function () {
-  angular.module('angularytics').filter('trackEvent', [
-    'Angularytics',
-    function (Angularytics) {
+  angular.module('angul3rytics').filter('trackEvent', [
+    'Angul3rytics',
+    function (Angul3rytics) {
       return function (entry, category, action, opt_label, opt_value, opt_noninteraction) {
-        Angularytics.trackEvent(category, action, opt_label, opt_value, opt_noninteraction);
+        Angul3rytics.trackEvent(category, action, opt_label, opt_value, opt_noninteraction);
         return entry;
       };
     }
