@@ -1,11 +1,11 @@
 {
-  "name": "angularytics",
+  "name": "angul3rytics",
   "version": "0.4.0",
-  "main": "./dist/angularytics.min.js",
-  "description": "The solution to tracking page views and events in a SPA with AngularJS",
+  "main": "./dist/angul3rytics.min.js",
+  "description": "The solution to tracking page views and events in a SPA with AngularJS with Google E-commerce enhacements ",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mgonto/angularytics.git"
+    "url": "git://github.com/l3r/angul3rytics.git"
   },
   "dependencies": {
     "angular": "*"
