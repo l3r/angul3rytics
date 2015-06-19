@@ -113,13 +113,13 @@ This is easy, right?
 
 # Releases Notes
 
-[Click here to see Releases Notes](https://github.com/mgonto/angul3rytics/blob/master/CHANGELOG.md)
+[Click here to see Releases Notes](https://github.com/l3r/angul3rytics/blob/master/CHANGELOG.md)
 
 # License
 
 The MIT License
 
-Copyright (c) 2013 Martin Gontovnikas http://www.gon.to/
+Copyright (c) 2015 L3R http://l3r.net/
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
