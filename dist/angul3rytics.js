@@ -48,15 +48,6 @@
                         }
                     });
                 };
-
-                service.trackTiming = function (category, variable, value, opt_label) {
-                    forEachHandlerDo(function (handler) {
-                        if (category && variable && value) {
-                            handler.trackTiming(category, variable, value, opt_label);
-                        }
-                    });
-                };
-
                 $rootScope.$on(pageChangeEvent, function () {
                     service.trackPageView($location.url());
                 });
@@ -101,9 +92,6 @@
                 $log.log('Event tracked', category, action, opt_label, opt_value, opt_noninteraction);
             };
 
-            service.trackTiming = function (category, variable, value, opt_label) {
-                $log.log('Timing tracked', category, variable, value, opt_label);
-            };
             //BE added for ecommerce order tracking
             service.trackEcommerceTrans = function (transactionId, affiliation, total, tax, shipping, city, state, country) {
                 $log.log('TRANSACTION Tracked', transactionId, affiliation, total, tax, shipping, city, state, country);
@@ -192,9 +180,6 @@
         service.trackEvent = function (category, action, opt_label, opt_value, opt_noninteraction) {
             ga('send', 'event', category, action, opt_label, opt_value, { 'nonInteraction': opt_noninteraction });
         };
-    service.trackTiming = function (category, variable, value, opt_label) {
-      ga('send', 'timing', category, variable, value, opt_label);
-    };
         return service;
     });
 }());
