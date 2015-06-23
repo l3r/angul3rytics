@@ -1,7 +1,7 @@
 {
   "name": "angul3rytics",
   "description": "The solution to tracking page views and events in a SPA with AngularJS enhaced E-Comm3rce supported ",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "filename": "angul3rytics.min.js",
   "main": "./dist/angul3rytics.min.js",
   "homepage": "https://github.com/l3r/angul3rytics",
