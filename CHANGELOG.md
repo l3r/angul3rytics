@@ -1,5 +1,5 @@
 
-0.4.0 / 2015-03-30
+0.5.2 / 2015-03-30
 ==================
 
   * Merge pull request #33 from tjokimie/track-timing
